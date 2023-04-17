@@ -10,35 +10,69 @@
       <div class="logo"></div>
       <div class="nav-items">
         <a href="index.html">Hjem</a> <a href="OmOss.html">Om oss</a>
-        <a href="TidligereJobber.html">Jobber</a>
+        <a href="TidligereJobber.html">Erfaring</a>
       </div>
     </nav>
     <section class="hero">
       <div class="hero-container">
+        <div class="column-right">
+          <h1>Litt om oss!</h1>
+          <p>
+            Unge, ambisiøse og klare for jobben. Vi er en gjeng med seksten 18
+            åringer som kan hjelpe deg med alt mulig praktisk drittarbeid! Vi
+            har en bred kompetanse og erfaring innenfor praktisk drittarbeid og
+            er fleksible slik at vi kan tilpasse oss dine behov. Vi stiller opp
+            til avtalt tid med godt humør og kan hjelpe deg med alt fra å vaske
+            hus til å grave hull. Vi gjør alltid det lille ekstra slik at
+            opplevelsen din skal bli så bra som mulig!
+            <br />
+            <br />
+            <i><b>Eksempler på jobber vi kan gjøre:</b></i> Rigge til
+            arragementer, Vaske hus, Hagearbeid, Hjelpe til med bryllup, Jobbe
+            på festivaler, Hjelpe til med husdyr, Måke snø, Rydde skog, Rive og
+            Grave hull
+          </p>
+        </div>
         <div class="column-left">
           <img
-            src="Images/HallsetBilde.jpg"
+            src="Images/GuttaKollasj1.JPG"
             alt="illustration
         "
-            class="hero-image"
+            class="hero-image hero-image-2"
+          />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="hero-container">
+        <div class="column-left">
+          <img
+            src="Images/Logo.png"
+            alt="illustration
+        "
+            class="hero-image-1 hero-image"
           />
         </div>
         <div class="column-right">
-          <h1>Hallset Bemanning</h1>
+          <h1>Det lille ekstra</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-            voluptates minus, ullam veniam omnis sequi, sunt ea quia suscipit
-            eligendi necessitatibus consequuntur ab dolore impedit? Iure
-            expedita qui quisquam dolor asperiores iste inventore, pariatur
-            explicabo! Possimus dolores quas eos inventore quod minima esse,
-            quis blanditiis debitis adipisci totam fugiat consectetur! Alias
-            distinctio ex consectetur velit tempora molestias pariatur iste,
-            provident corporis laudantium minus voluptatum dolores nostrum
-            accusamus architecto laboriosam quisquam dolorum debitis dolorem,
-            quidem tenetur vitae. Consequuntur veniam provident nihil!
+            Vi tror at god kundeservice og det lille ekstra er nøkkelen til
+            suksess, og vil alltid jobbe for å gi våre kunder den beste
+            opplevelsen. Vårt mål er å hjelpe vanlige folk med praktisk
+            drittarbeid i hverdagen slik at de kan gjøre noe de er glade i å
+            gjøre istedet. Vår formål er å styrke lokal samfunnet ved å bidra
+            med rimelig og ærlig arbeidskraft. Hvis det er noe du lurer på, er
+            vi alltid tilgjengelige for å hjelpe deg på best mulig måte. Hvis
+            dette høres interessant ut, ta gjærne kontakt med oss!
           </p>
         </div>
       </div>
+    </section>
+    <section class="section-3">
+      <button onclick="window.location.href='KontaktOss.html';">
+        Kontakt Oss!
+      </button>
     </section>
   </body>
   <style>
@@ -49,6 +83,13 @@
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
       zoom: 100%;
+    }
+
+    .section-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8rem;
     }
 
     nav {
@@ -87,7 +128,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       height: 95vh;
-      padding: 3rem calc((100vw - 1300px) / 2);
+      padding: 1rem calc((100vw - 1300px) / 2);
     }
 
     section {
@@ -111,7 +152,7 @@
     .column-right p {
       margin-bottom: 2rem;
       font-size: 1.2rem;
-      line-height: 1.5;
+      line-height: 1.7;
     }
 
     .column-left {
@@ -121,46 +162,54 @@
 
     .hero-image {
       width: 100%;
-      height: 100%;
+      height: 90%;
+    }
+
+    button {
+      padding: 1.5rem 4.5rem;
+      font-size: 1rem;
+      border: 2px solid black;
+      color: #fff;
+      background: #000;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: 0.2s all ease-out;
+    }
+
+    button:hover {
+      background: #ffffff;
+      color: #000;
+      transition: 0.2s all ease-in;
     }
 
     @media screen and (max-width: 1100px) {
       .hero-container {
         grid-template-columns: 1fr;
+        padding: 0;
+        height: 1000px;
         overflow-y: visible;
       }
 
-      .column-right {
-        font-size: 1.2rem;
-        line-height: 1.5;
-      }
-
-      section {
-        border-bottom: none;
-        padding: 2rem;
-        margin-top: 0rem;
-      }
-
-      .heroOne {
-        margin-top: 20rem;
-      }
-
-      .heroTwo {
-        margin-top: 25rem;
-      }
-
       .column-left {
-        padding: 0rem 2rem;
-        margin-bottom: 3rem;
-      }
-
-      .column-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        color: #000;
         padding: 0rem 0rem;
+        margin-bottom: -17rem;
+      }
+
+      .column-right {
+        width: 90%;
+        justify-self: center;
+      }
+
+      button {
+        margin-top: 8rem;
+      }
+
+      .hero-image-2 {
+        margin-top: -20rem;
+      }
+
+      .hero-image-1 {
+        display: none;
       }
     }
   </style>
