@@ -9,13 +9,14 @@
     <nav>
       <div class="logo"></div>
       <div class="nav-items">
-        <a href="index.html">Hjem</a> <a href="OmOss.html">Om oss</a> <a href="TidligereJobber.html">Tidligere Jobber</a>
+        <a href="index.html">Hjem</a> <a href="OmOss.html">Om oss</a>
+        <a href="TidligereJobber.html">Tidligere Jobber</a>
       </div>
     </nav>
     <section class="hero">
       <div class="hero-container">
         <div class="column-left">
-            <img
+          <img
             src="Images/HallsetBilde.jpg"
             alt="illustration
         "
@@ -23,9 +24,18 @@
           />
         </div>
         <div class="column-right">
-            <h1>Hallset Bemanning</h1>
+          <h1>Hallset Bemanning</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptates minus, ullam veniam omnis sequi, sunt ea quia suscipit eligendi necessitatibus consequuntur ab dolore impedit? Iure expedita qui quisquam dolor asperiores iste inventore, pariatur explicabo! Possimus dolores quas eos inventore quod minima esse, quis blanditiis debitis adipisci totam fugiat consectetur! Alias distinctio ex consectetur velit tempora molestias pariatur iste, provident corporis laudantium minus voluptatum dolores nostrum accusamus architecto laboriosam quisquam dolorum debitis dolorem, quidem tenetur vitae. Consequuntur veniam provident nihil!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+            voluptates minus, ullam veniam omnis sequi, sunt ea quia suscipit
+            eligendi necessitatibus consequuntur ab dolore impedit? Iure
+            expedita qui quisquam dolor asperiores iste inventore, pariatur
+            explicabo! Possimus dolores quas eos inventore quod minima esse,
+            quis blanditiis debitis adipisci totam fugiat consectetur! Alias
+            distinctio ex consectetur velit tempora molestias pariatur iste,
+            provident corporis laudantium minus voluptatum dolores nostrum
+            accusamus architecto laboriosam quisquam dolorum debitis dolorem,
+            quidem tenetur vitae. Consequuntur veniam provident nihil!
           </p>
         </div>
       </div>
@@ -33,112 +43,111 @@
   </body>
   <style>
     * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  zoom: 100%;
-}
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      zoom: 100%;
+    }
 
-nav {
-  height: 70px;
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2);
-}
+    nav {
+      height: 70px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0rem calc((100vw - 1300px) / 2);
+    }
 
-.logo {
-  background: url(Images/LogoTekstNav.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 50%;
-  width: 19%;
-  margin-left: 2rem;
-}
+    .logo {
+      background: url(Images/LogoTekstNav.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 50%;
+      width: 19%;
+      margin-left: 2rem;
+    }
 
-nav a {
-  text-decoration: none;
-  color: #000;
-  padding: 0 1.5rem;
-}
+    nav a {
+      text-decoration: none;
+      color: #000;
+      padding: 0 1.5rem;
+    }
 
-nav a:hover {
-  color: rgb(53, 53, 53);
-}
+    nav a:hover {
+      color: rgb(53, 53, 53);
+    }
 
-.hero {
-  background: #fff;
-}
+    .hero {
+      background: #fff;
+    }
 
-.hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 95vh;
-  padding: 3rem calc((100vw - 1300px) / 2);
-}
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 95vh;
+      padding: 3rem calc((100vw - 1300px) / 2);
+    }
 
-section {
-    padding: 2rem;
-}
+    section {
+      padding: 2rem;
+    }
 
-.column-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: #000;
-  padding: 0rem 2rem;
-}
+    .column-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: #000;
+      padding: 0rem 2rem;
+    }
 
-.column-right h1 {
-  margin-bottom: 1rem;
-  font-size: 3rem;
-}
+    .column-right h1 {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+    }
 
-.column-right p {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
+    .column-right p {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
 
-.column-left {
-  padding: 0rem 3rem;
-  margin-bottom: 3rem;
-}
+    .column-left {
+      padding: 0rem 3rem;
+      margin-bottom: 3rem;
+    }
 
-.hero-image {
-  width: 100%;
-  height: 100%;
-}
+    .hero-image {
+      width: 100%;
+      height: 100%;
+    }
 
-@media screen and (max-width: 1100px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    overflow-y:visible;
-  }
+    @media screen and (max-width: 1100px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        overflow-y: visible;
+      }
 
-  .column-right {
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-  
-  section {
-    border-bottom: 1px dotted grey;
-    padding: 2rem;
-    margin-top: 0rem;
-  }
+      .column-right {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
 
-  .heroOne {
-    margin-top: 20rem;
-  }
+      section {
+        border-bottom: 1px dotted grey;
+        padding: 2rem;
+        margin-top: 0rem;
+      }
 
-  .heroTwo {
-    margin-top: 25rem;
-  }
-}
+      .heroOne {
+        margin-top: 20rem;
+      }
 
+      .heroTwo {
+        margin-top: 25rem;
+      }
+    }
   </style>
 </html>
